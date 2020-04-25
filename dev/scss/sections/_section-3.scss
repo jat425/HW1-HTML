@@ -1,0 +1,17 @@
+/* =============
+    Secttion 3
+============= */
+
+#section-3{
+
+    #section-3-container{
+        display: grid;
+        grid-template-columns: 10px auto 10px;
+        grid-template-areas: ". section-3 .";
+
+        #section-3-content{
+            grid-area: section-3;
+        }
+    }
+    img{width: 100%;}
+}
