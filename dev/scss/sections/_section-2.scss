@@ -3,6 +3,11 @@
 ============= */
 
 #section-2{
+
+    @include md{
+        display: grid;
+        grid-template-columns: 40% auto;
+    }
     
     #section-2-container{
         display: grid;

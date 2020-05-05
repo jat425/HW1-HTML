@@ -12,10 +12,54 @@
         display: grid;
         gap: 24px;
 
+        @include md{
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas:
+            "g1 g1"
+            "g2 g3";
+        }
+
+        @include xl{
+            grid-template-columns: 60% auto;
+            grid-template-areas:
+            "g1 g2"
+            "g1 g3";
+        }
+
+
         li{
             img{
                 width: 100%;
             }
         }
+
+
+        #g1{
+            @include md{
+                grid-area: g1;
+            }
+            @include xl{
+                grid-area: g1;
+            }
+        }
+
+        #g2{
+            @include md{
+                grid-area: g2;
+            }
+            @include xl{
+                grid-area: g2;
+            }
+        }
+
+        #g3{
+            @include md{
+                grid-area: g3;
+            }
+            @include xl{
+                grid-area: g3;
+            }
+        }
     }
+
 }
