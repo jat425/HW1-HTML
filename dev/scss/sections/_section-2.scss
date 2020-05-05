@@ -4,23 +4,42 @@
 
 #section-2{
 
-    @include md{
+    @include xl{
         display: grid;
-        grid-template-columns: 40% auto;
+        grid-template-columns: auto 1200px auto;
+        grid-template-areas: ". section-2-desktop .";
     }
-    
-    #section-2-container{
-        display: grid;
-        grid-template-columns: 10px auto 10px;
-        grid-template-areas: ". section-2 .";
 
-        #section-2-content{
-            grid-area: section-2;
+    #section-2-desktop{
+
+        @include lg{
+            display: grid;
+            grid-template-columns: 40% auto;
         }
-    }
-    aside{
-        img{
-            width: 100%;
+
+        @include xl{
+            grid-area: section-2-desktop;
         }
+    
+        @include md{
+            display: grid;
+            grid-template-columns: 40% auto;
+        }
+        
+        #section-2-container{
+            display: grid;
+            grid-template-columns: 10px auto 10px;
+            grid-template-areas: ". section-2 .";
+    
+            #section-2-content{
+                grid-area: section-2;
+            }
+        }
+        aside{
+            img{
+                width: 100%;
+            }
+        }
+
     }
 }

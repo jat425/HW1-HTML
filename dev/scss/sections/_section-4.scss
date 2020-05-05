@@ -7,6 +7,10 @@
     grid-template-columns: 0 auto 0;
     grid-template-areas: ". section-4 .";
 
+    @include xl{
+        grid-template-columns: auto 1200px auto;
+    }
+
     ul{
         grid-area: section-4;
         display: grid;
