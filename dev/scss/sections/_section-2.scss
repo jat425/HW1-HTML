@@ -2,47 +2,59 @@
     Section 2
 ============= */
 
-#section-2{
+#section-2 {
 
-    @include xl{
+    @include xl {
         display: grid;
         grid-template-columns: auto 1200px auto;
         grid-template-areas: ". section-2-desktop .";
     }
 
-    #section-2-desktop{
+    #section-2-desktop {
 
-        @include lg{
+        @include lg {
             display: grid;
             grid-template-columns: 40% auto;
         }
 
-        @include xl{
+        @include xl {
             grid-area: section-2-desktop;
         }
-    
-        @include md{
+
+        @include md {
             display: grid;
             grid-template-columns: 40% auto;
         }
-        
-        #section-2-container{
+
+        #section-2-container {
             display: grid;
             grid-template-columns: 10px auto 10px;
             grid-template-areas: ". section-2 .";
-    
-            #section-2-content{
+
+            #section-2-content {
+                color: $dark;
+                margin-top: 40px;
                 grid-area: section-2;
+
+                @include md{
+                    margin-top: 170px;
+                    margin-bottom: 170px;
+                }
+
+                @include lg{
+                    margin-top: 288px;
+                    margin-bottom: 288px;
+                }
             }
         }
 
-        aside{
+        aside {
             background-image: url('../img/section-2/aside.png');
             height: 60vh;
             background-position: center;
             background-size: cover;
 
-            @include lg{
+            @include lg {
                 height: 752px;
             }
         }

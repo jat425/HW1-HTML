@@ -3,11 +3,13 @@
 ============= */
 
 #footer{
+    background-color: #FCD8C0;
     display: grid;
     grid-template-columns: 20px auto 20px;
     grid-template-areas: ". footer .";
 
     #footer-content{
+        color: $white;
         grid-area: footer;
     }
 }
