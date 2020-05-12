@@ -14,7 +14,7 @@
     ul{
         grid-area: section-4;
         display: grid;
-        gap: 24px;
+        gap: 20px;
 
         @include md{
             grid-template-columns: repeat(2, 1fr);

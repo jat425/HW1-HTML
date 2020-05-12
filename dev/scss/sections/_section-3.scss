@@ -15,8 +15,16 @@
         
         @include md{
             display: grid;
-            grid-template-columns: 15% auto 15%;
+            grid-template-columns: auto 60% auto;
             grid-template-areas: ". section-3 .";
+        }
+
+        @include lg{
+            grid-template-columns: auto 50% auto;
+        }
+
+        @include xl{
+            grid-template-columns: auto 800px auto;
         }
 
     }   
