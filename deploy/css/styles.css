@@ -367,7 +367,6 @@ textarea {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left;
-  border: 1px solid red;
   height: 371px; }
   @media (min-width: 768px) {
     #section-1 {
@@ -408,9 +407,14 @@ textarea {
   #section-2 #section-2-desktop #section-2-container #section-2-content {
     grid-area: section-2; }
 
-#section-2 #section-2-desktop aside img {
-  width: 100%; }
-
+#section-2 #section-2-desktop aside {
+  background-image: url("../img/section-2/aside.png");
+  height: 60vh;
+  background-position: center;
+  background-size: cover; }
+  @media (min-width: 992px) {
+    #section-2 #section-2-desktop aside {
+      height: 752px; } }
 /* =============
     Secttion 3
 ============= */
