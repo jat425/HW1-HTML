@@ -8,8 +8,18 @@
     grid-template-columns: 20px auto 20px;
     grid-template-areas: ". footer .";
 
-    #footer-content{
+    aside{
         color: $white;
         grid-area: footer;
+       text-align: right;
+    }
+
+    article{
+        grid-area: footer;
+        @include md{
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+        }
     }
 }

@@ -3,58 +3,76 @@
 ============= */
 
 #section-2 {
-
-    @include xl {
+    @include xl{
         display: grid;
         grid-template-columns: auto 1200px auto;
         grid-template-areas: ". section-2-desktop .";
     }
 
-    #section-2-desktop {
-
-        @include lg {
+    #section-2-desktop{
+        @include lg{
             display: grid;
             grid-template-columns: 40% auto;
         }
 
-        @include xl {
+        @include xl{
             grid-area: section-2-desktop;
         }
 
-        @include md {
+        @include md{
             display: grid;
             grid-template-columns: 40% auto;
         }
 
-        #section-2-container {
+        #section-2-container{
             display: grid;
-            grid-template-columns: 10px auto 10px;
-            grid-template-areas: ". section-2 .";
+            grid-gap: 20px;
+            grid-template-columns: 15px auto 15px;
+            grid-template-areas: ". section-2-content .";
+             padding-top: 30px;
+            @include md{
+                padding-top: 120px;
+            }
+            @include lg{
+                padding-top: 288px;
+            }
 
-            #section-2-content {
+            #section-2-content{
                 color: $dark;
-                margin-top: 40px;
-                grid-area: section-2;
-
-                @include md{
-                    margin-top: 170px;
-                    margin-bottom: 170px;
+                grid-area: section-2-content;
+                text-align: center;
+                
+                h1{
+                    font-size: rem-calc(27);
                 }
 
-                @include lg{
-                    margin-top: 288px;
-                    margin-bottom: 288px;
+                p{
+                    font-size: rem-calc(20);
+                }
+
+                hr{
+                    border-color: $pink;
+                    border-style: solid;
+                    border-width: 1px;
+                }
+
+                @include md{
+                    text-align: left;
                 }
             }
         }
 
-        aside {
+        aside{
             background-image: url('../img/section-2/aside.png');
             height: 60vh;
             background-position: center;
             background-size: cover;
 
-            @include lg {
+            @include lg{
+                height: 417px;
+            }
+
+            @include lg{
                 height: 752px;
             }
         }

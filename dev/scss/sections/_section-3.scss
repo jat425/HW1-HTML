@@ -1,0 +1,23 @@
+/* =============
+    Secttion 3
+============= */
+#section-3{
+    background-image: url('../img/section-3/hero2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    height: 513px;
+
+    @include md{
+        height: 516px;
+    }
+
+    @include lg{
+        height: 683px;
+    }
+
+    @include xl{
+        height: 700px;
+    }
+}
