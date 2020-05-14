@@ -117,14 +117,6 @@
 		"oT": 1,
 		"q": 100
 		},
-	"/deploy/img/section-5/circle-mask_tmp1539213639": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/deploy/img/section-5/circle-mask_tmp1539213639",
-		"oF": 0
-		},
 	"/deploy/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -162,6 +154,14 @@
 		"oAP": "/dev/footer.html",
 		"oF": 0
 		},
+	"/dev/header.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/header.html",
+		"oF": 0
+		},
 	"/dev/index.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -176,8 +176,8 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/dev/js/scripts-min.js",
-		"oF": 0,
+		"oAP": "/deploy/js/scripts-min.js",
+		"oF": 2,
 		"sC": 3,
 		"tS": 0
 		},
