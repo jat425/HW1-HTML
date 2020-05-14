@@ -10,9 +10,9 @@ header {
 
     >div {
         display: grid;
-        grid-template-areas: "logo burger"
+        grid-template-areas: "burger logo"
             "nav nav";
-        grid-template-columns: 80% auto;
+        grid-template-columns: auto 80%;
 
         @include lg {
             grid-template-areas: "logo nav";
@@ -41,7 +41,7 @@ header {
         }
 
         #nav-container {
-            background-color: $light-grey;
+            background-color: $dark;
             display: none;
             grid-area: nav;
             padding: 20px;
